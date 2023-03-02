@@ -216,7 +216,7 @@
   font-weight: normal;
 }
 
-/* Блок Feynman */
+/* БЛОК Feynman */
 
 .feynman {
   height: 890px;
@@ -279,7 +279,7 @@ color: #2f80ed;
 }
 
 
-/* Kaufman */
+/* БЛОК Kaufman */
 
 .kaufman {                                        /*сделал блок флекс - заг, подзаг,табл*/
   display: flex;
@@ -408,9 +408,9 @@ color: #2f80ed;
 
 /* ссылки */
 
-.footer__column_content-info {
-  /* border: solid 2px red; */
-}
+/*.footer__column_content-info {
+   border: solid 2px red;
+}*/
 
 .footer__column-heading {
   line-height: 30px;
@@ -425,9 +425,9 @@ color: #2f80ed;
   font-weight: normal;
 }
 
-.footer__column_content-social {
-  /* border: dotted 2px red; */
-}
+/*.footer__column_content-social {
+   border: dotted 2px red;
+}*/
 
 .footer__social-icon {
   line-height: 30px;
