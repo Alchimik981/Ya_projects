@@ -285,8 +285,8 @@ color: #2f80ed;
   display: flex;
   flex-direction: column;
   /*margin-bottom: 90px; */
-  background-color:#1f1f1f ;
-  color: white ;
+  background-color:#1f1f1f;
+  color: white;
   position: relative;
   z-index: 0;
   overflow: hidden;
@@ -368,8 +368,8 @@ color: #2f80ed;
 
 .footer {
   min-height: 350px;
-  background-color:#1f1f1f ;
-  color: white ;
+  background-color:#1f1f1f;
+  color: white;
   /* border: solid 2px red; */
   display: flex ;
 }
