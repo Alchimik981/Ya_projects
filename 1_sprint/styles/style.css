@@ -23,11 +23,6 @@
   /* выше установили ограничения для секции - комментарий задания */
 }
 
-/* Логотип*/
-
-.block__logo {
-  margin: auto;
-}
 
 .logo__place_header {
   width: 228px;
@@ -41,6 +36,8 @@
 /* блок header со всеми элементами */
 
 .header__title {
+  margin: 0;
+  padding: 0;
   color: #000000;
   margin: auto;
   margin-left: 64px;
@@ -52,11 +49,15 @@
 }
 
 .header__link {
+  margin: 0;
+  padding: 0;
   text-decoration: none;
   color: #2f80ed;
 }
 
-.subtitle {
+.header__subtitle {
+  margin: 0;
+  padding: 0;
   width: 388px;
   position: absolute;
   bottom: 30px;
@@ -74,15 +75,7 @@
   bottom: 0;
   right: 0;
   z-index: 1;
-}
-
-.header__main-illustration-img {
-  width: 100%;
   height: auto;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  z-index: 1;
 }
 
 .header__square-pic {
@@ -104,7 +97,7 @@
 
 /* блок таблиц */
 
-.two_columns {
+.two-columns {
   margin: auto;
   width: 80%;
   min-height: 100px;
@@ -114,7 +107,9 @@
 }
 
 
-.two_columns__brief {
+.two-columns__brief {
+  margin: 0;
+  padding: 0;
   max-width: 175px;
   line-height: 1.2;
   font-size: 18px;
@@ -124,23 +119,27 @@
 
 /* блок текста */
 
-.two_columns__main-text {
+.two-columns__main-text {
+  margin: 0;
+  padding: 0;
   max-width: 80%;
   min-width: 784px;
 }
 
-.two_columns__paragraph {
+.two-columns__paragraph {
   margin: 0;
+  padding: 0;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
+  margin-bottom: 30px;
 }
 
-.two_columns__center-paragraph {
-  margin: 30px 0;
+.two-columns__paragraph:last-child {
+  margin-bottom: 0;
 }
 
-.two_columns__paragraph_span-accent {
+.two-columns__span-accent {
   line-height: 34px;
   font-size: 24px;
   font-weight: 600;
@@ -151,17 +150,19 @@
 .digits {
   /*сделал блок флекс - заг, подзаг,табл*/
   /*  border: solid 1px red;    */
+  margin-top: 100px;
+  margin-bottom: 100px;
   display: flex;
   flex-direction: column;
-  margin-bottom: 100px;
 }
 
 /*заголовок*/
 
-.section__title {
+.section-title {
   /*тег заголовков всё меняет, очень сильно расширяет блок???*/
   width: 60%;
-  margin: auto;
+  margin: 0 auto;
+  padding: 0;
   text-align: center;
   line-height: 1.15;
   font-size: 60px;
@@ -170,9 +171,10 @@
 
 /*подзаголовок*/
 
-.section__subtitle {
+.section-subtitle {
   width: 60%;
-  margin: auto;
+  margin: 0 auto;
+  padding: 0;
   text-align: center;
   margin-top: 20px;
   line-height: 34px;
@@ -186,21 +188,24 @@
   /*таблица выравнивание по центру*/
   width: 1100px;
   margin: auto;
-}
-
-/* блоки в таблице; сетка*/
-
-.table_cell {
-  /* border: solid 5px yellow; */
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
+/* блоки в таблице; сетка*/
+
+.table__cell {
+  /* border: solid 5px yellow; */
+  width: 250px;
+}
+
 /* плитки*/
 
-.table_heading {
+.table__heading {
+  margin: 0;
+  padding: 0;
   width: 250px;
   margin-top: 60px;
   line-height: 1.15;
@@ -208,7 +213,9 @@
   font-weight: 600;
 }
 
-.table_text {
+.table__text {
+  margin: 0;
+  padding: 0;
   margin-top: 20px;
   line-height: 1.2;
   font-size: 18px;
@@ -281,10 +288,8 @@
 /* БЛОК Kaufman */
 
 .kaufman {
-  /*сделал блок флекс - заг, подзаг,табл*/
   display: flex;
   flex-direction: column;
-  /*margin-bottom: 90px; */
   background-color: #1f1f1f;
   color: #FFFFFF;
   position: relative;
@@ -294,19 +299,23 @@
 
 /*заголовок*/
 
-.section_title__theme_dark {
+.section-title_theme_dark {
+  margin: 0;
+  padding: 0;
   width: 60%;
   margin: auto;
-  margin-top: 90px;
   text-align: center;
   line-height: 1.15;
   font-size: 60px;
   font-weight: 600;
+  margin-top: 90px;
 }
 
 /*подзаголовок*/
 
-.section_subtitle__theme_dark {
+.section-subtitle_theme_dark {
+  margin: 0;
+  padding: 0;
   width: 60%;
   margin: auto;
   text-align: center;
@@ -318,7 +327,7 @@
 
 /*таблица*/
 
-.table__theme_dark {
+.table_theme_dark {
   /*таблица выравнивание по центру*/
   width: 1100px;
   margin: auto;
@@ -326,23 +335,30 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 90px;
+
 }
 
-
-.table__theme_dark_heading {
+.table__cell_theme_dark {
   width: 200px;
+}
+
+.table__heading_theme_dark {
+  margin: 0;
+  padding: 0;
   margin-top: 80px;
   line-height: 1.15;
   font-size: 24px;
   font-weight: 600;
 }
 
-.table__theme_dark_text {
+.table__text_theme_dark {
+  margin: 0;
+  padding: 0;
   margin-top: 20px;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
+  margin-bottom: 90px;
 }
 
 .kaufman__triangle {
@@ -367,28 +383,41 @@
 /* колонки */
 
 .footer__columns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   margin: auto;
   margin-top: 60px;
   margin-bottom: 40px;
   width: 90%;
+}
+
+
+.footer__column_content_copyright {
   display: flex;
+  flex-basis: 711px;
+  flex-direction: column;
   justify-content: space-between;
 }
 
-.footer__column_content-copyright {
-  flex-basis: 711px;
+.footer__column_content_info {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+}
+
+.footer__column_content_social {
+  display: flex;
+  flex-direction: column;
 }
 
 .logo__place_footer {
   width: 228px;
   height: 32px;
-  display: flex;
 }
 
 .footer__author {
+  margin: 0;
+  padding: 0;
   margin-top: 18px;
   margin-bottom: 18px;
   line-height: 25px;
@@ -398,20 +427,24 @@
 
 /* ссылки */
 
-
 .footer__column-heading {
+  margin: 0;
+  padding: 0;
   line-height: 30px;
   font-size: 18px;
   font-weight: 600;
-  margin: 0;
-  margin-bottom: 20px;
 }
 
-.footer__column_links {
+.footer__column-links {
+  list-style-type: none;
+  margin-left: 0;
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
+  display: flex;
+  flex-direction: column;
   margin: 0;
+  margin-top: 20px;
 }
 
 .footer__social-icon {
@@ -422,13 +455,13 @@
   height: 16px;
 }
 
-.footer__column_link {
-  margin-top: 20px;
+.footer__column-link {
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
   text-decoration: none;
   color: #FFFFFF;
+  list-style-type: none;
 }
 
 .header__link:hover {
@@ -439,6 +472,11 @@
   background-color: #B0E0E6;
 }
 
-.footer__column_link:hover {
+.footer__column-link:hover {
   background-color: #A9A9A9;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
 }
