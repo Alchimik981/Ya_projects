@@ -36,10 +36,9 @@
 /* блок header со всеми элементами */
 
 .header__title {
-  margin: 0;
+  margin: auto 0;
   padding: 0;
   color: #000000;
-  margin: auto;
   margin-left: 64px;
   width: 730px;
   font-size: 102px;
@@ -75,8 +74,7 @@
   bottom: 0;
   right: 0;
   z-index: 1;
-  height: auto;
-}
+  }
 
 .header__square-pic {
   width: 568px;
@@ -300,7 +298,7 @@
 /*заголовок*/
 
 .section-title_theme_dark {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   width: 60%;
   margin: auto;
@@ -314,10 +312,9 @@
 /*подзаголовок*/
 
 .section-subtitle_theme_dark {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   width: 60%;
-  margin: auto;
   text-align: center;
   margin-top: 20px;
   line-height: 34px;
