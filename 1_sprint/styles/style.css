@@ -28,7 +28,7 @@
   height: 32px;
 }
 
-.logo__place_header {
+.logo_place_header {
   margin-top: 30px;
   margin-left: 64px;
   position: absolute;
@@ -76,6 +76,7 @@
   bottom: 0;
   right: 0;
   z-index: 1;
+  object-fit: cover;
 }
 
 .header__square-pic {
@@ -412,7 +413,7 @@
 }
 
 
-.logo__place_footer {
+.logo_place_footer {
 
 }
 */
