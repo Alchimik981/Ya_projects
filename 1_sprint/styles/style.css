@@ -23,10 +23,12 @@
   /* выше установили ограничения для секции - комментарий задания */
 }
 
-
-.logo__place_header {
+.logo {
   width: 228px;
   height: 32px;
+}
+
+.logo__place_header {
   margin-top: 30px;
   margin-left: 64px;
   position: absolute;
@@ -74,7 +76,7 @@
   bottom: 0;
   right: 0;
   z-index: 1;
-  }
+}
 
 .header__square-pic {
   width: 568px;
@@ -381,35 +383,39 @@
 .footer__columns {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   margin: auto;
   margin-top: 60px;
   margin-bottom: 40px;
   width: 90%;
+  justify-content: space-between;
 }
 
-
 .footer__column_content_copyright {
-  display: flex;
   flex-basis: 711px;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.footer__column_content_info {
+.footer__column {
   display: flex;
   flex-direction: column;
+}
+
+/*
+.footer__column_content_info {
+
 }
 
 .footer__column_content_social {
-  display: flex;
-  flex-direction: column;
+
 }
 
+
 .logo__place_footer {
-  width: 228px;
-  height: 32px;
+
 }
+*/
 
 .footer__author {
   margin: 0;
@@ -419,6 +425,7 @@
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
+  justify-self: center;
 }
 
 /* ссылки */
@@ -432,15 +439,14 @@
 }
 
 .footer__column-links {
-  list-style-type: none;
-  margin-left: 0;
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
   display: flex;
   flex-direction: column;
-  margin: 0;
   margin-top: 20px;
+  list-style-type: none;
+  padding-left: 0;
 }
 
 .footer__social-icon {
@@ -452,12 +458,13 @@
 }
 
 .footer__column-link {
+  margin: 0;
+  padding: 0;
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
   text-decoration: none;
   color: #FFFFFF;
-  list-style-type: none;
 }
 
 .header__link:hover {
@@ -470,9 +477,4 @@
 
 .footer__column-link:hover {
   background-color: #A9A9A9;
-}
-
-.list {
-  margin: 0;
-  padding: 0;
 }
